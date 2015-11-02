@@ -1,0 +1,16 @@
+<h1>Parking Summary</h1>
+
+<p>License: {{ license }}. Location: {{ address }}.</p>
+
+<h2>Upcoming Tow Zones</h2>
+<p>
+	{% for towZone in towZones %}
+	{% if loop.first %}
+	<ul>
+	{% endif %}
+		<li>{{ towZone.location }} -- {{ towZone.timeRange }}</li>
+	{% if loop.last %}
+	</ul>
+	{% endif %}
+	{% endfor %}
+</p>

@@ -1,0 +1,19 @@
+{
+	"car": {
+		"license": "XXXXXX",
+		"location": {
+			"street_number": "1000",
+			"street_name": "Market Street"
+		}
+	},
+	"email": {
+		"to": "youremail@gmail.com",
+		"config": {
+			"service": "Gmail",
+			"auth": {
+				"user": "emailtosendfrom@gmail.com",
+				"pass": "password"
+			}
+		}
+	}
+}
