@@ -23,7 +23,7 @@ var TowZoneChecker = {
 				var newRows = _.reduce(rows, function (memo, row) {
 					var toAddress = parseInt(row.toaddress, 10);
 					var fromAddress = parseInt(row.fromaddress, 10);
-					if (fromAddress <= streetNumber && toAddress >= streetNumber) {
+					if (fromAddress <= (streetNumber + 50) && toAddress >= (streetNumber - 50)) {
 						memo.push(TowZoneChecker._parseRow(row));
 					}
 					return memo;
