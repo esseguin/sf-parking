@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.esseguin.SFParking</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/path/to/sf-parking/bin/send_email.sh</string>
+  </array>
+
+  <key>Nice</key>
+  <integer>1</integer>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+      <key>Hour</key>
+      <integer>12</integer>
+      <key>Minute</key>
+      <integer>03</integer>
+  </dict>
+
+  <key>StandardErrorPath</key>
+  <string>/tmp/sf-parking.err</string>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/sf-parking.out</string>
+</dict>
+</plist>
