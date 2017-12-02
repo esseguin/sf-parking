@@ -1,0 +1,23 @@
+extends: airbnb-base
+plugins:
+  - typescript
+env:
+  node: true
+  mocha: true
+  es6: true
+parser: typescript-eslint-parser
+parserOptions:
+  sourceType: module
+  ecmaFeatures:
+    modules: true
+rules:
+  prefer-const: warn
+  import/extensions: never
+  no-undef: 0
+  no-unused-vars: 0
+  no-use-before-define: 0
+  no-multi-spaces: 0
+settings:
+  import/resolver:
+    node: true
+    eslint-import-resolver-typescript: true
